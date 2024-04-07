@@ -4,8 +4,6 @@ const axios = require("axios");
 const cors = require("cors");
 const app = express();
 app.use(express.json());
-const mongoose = require("mongoose");
-mongoose.connect(process.env.MONGODB_URI);
 
 // requête character
 app.get("/characters", cors(), async (req, res) => {
